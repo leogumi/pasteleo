@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/img/logo.png">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<title>PEPF</title>
+</head>
+
+<body class="gridConteiner">
+	<header>
+		<div>
+			<a href="../index.html"><img src="../assets/img/logo.png" alt="logo pagina web"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="./recetas.html">recetas</a></li>
+				<li><a href="./galeria.html">galeria</a></li>
+				<li><a href="./talleres.html">talleres</a></li>
+				<li><a href="./contacto.html">contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- formulario de contacto -->
+	<section class="gridContacto">
+		<img src="../assets/img/contacto.png" alt="contacto" class="contactoimg">
+		<article class="contacto">
+			<form action="#">
+				<label for="Nombre y Apellido"> Nombre y Apellido:
+					<input type="text" placeholder="">
+					<label for="email">
+						Email: <input type="email" placeholder="aaa@gmail.com" name="email">
+					</label>
+				</label>
+				<input type="number" placeholder="EDAD">
+				<label for="Comentarios"> Comentarios:
+					<textarea placeholder="contanos que talleres te gustaria realizar"></textarea>
+				</label>
+				<div>Que curso te gustaria realizar?</div>
+				<select name="cursos" id="cursos">
+					<option value="Postres">Postres</option>
+					<option value="Bombones">Bombones</option>
+					<option value="Tortas y Tartas">Tortas y Tartas</option>
+				</select>
+				<div>Queres recibir novedades sobre nuestros cursos?
+					<input type="checkbox" name="acepta" value="1">
+				</div>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Resetear">
+			</form>
+		</article>
+	</section>
+	<footer class="bgColor mt-25 p-25">
+		<a href="../index.html">
+			<img src="../assets/img/logo.png" alt="logo pagina web">
+		</a>
+		<div class="contactoFooter">
+			<a href="./contacto.html">contacto</a>
+		</div>
+	</footer>
+</body>
