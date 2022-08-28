@@ -48,6 +48,9 @@ header {
   align-items: center;
   padding: 30px;
 }
+.rotate {
+  transform: rotate(-45deg);
+}
 .titulo {
   grid-area: titulo;
   display: grid;
