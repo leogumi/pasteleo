@@ -54,6 +54,7 @@ header {
 .titulo {
   grid-area: titulo;
   display: grid;
+  background-color: #246355;
 }
 .encabezado {
   grid-area: encabezado;
@@ -116,6 +117,7 @@ h2 {
   display: grid;
   grid-template-columns: 200% 200%;
   grid-template-areas: receta1 alfajores;
+  min-height: 100vh;
 }
 .recetas {
   text-align: center;
@@ -127,6 +129,14 @@ h2 {
   font-weight: bold; /*modifica grosor de tipografia*/
   font-style: italic; /*modifica estilo tipografia (italica y normal)*/
   background-color: rgb(74, 115, 248);
+}
+
+/* Galeria*/
+
+.galeria {
+  display: grid;
+  grid-template-columns: auto;
+  object-fit: cover;
 }
 
 /* talleres */
@@ -160,34 +170,6 @@ main {
   flex-direction: row;
 }
 
-/*galeria*/
-.gridimg {
-  display: grid;
-  grid-template-columns: 200% 200%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "tartasimg tartasimg"
-    "tortasimg tortasimg"
-    "brownieimg alfajoresimg";
-  justify-content: space-between;
-}
-.brownieimg {
-  grid-area: brownieimg;
-}
-.alfajoresimg {
-  grid-area: alfajoresimg;
-}
-.tartasimg {
-  grid-area: tartasimg;
-}
-.tortasimg {
-  grid-area: tortasimg;
-}
-.imgTortas {
-  padding: 50px;
-  margin: 50px;
-  background-color: #246355;
-}
 /* contacto */
 
 .gridContacto {
@@ -227,6 +209,7 @@ main {
   }
   h1 {
     font-size: 30px;
+    background-color: #246355;
   }
   .imgTortas {
     padding: 0%;
@@ -239,10 +222,7 @@ main {
     color: aliceblue;
     text-align: center;
   }
-  .tableroCompleto {
-    display: grid;
-    font-family: tahoma;
-  }
+
   .video {
     display: flex;
   }
