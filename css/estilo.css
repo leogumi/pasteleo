@@ -198,6 +198,13 @@ main {
     background-color: #246355;
     flex-direction: column;
   }
+  .rotate {
+    transform: rotate(0deg);
+    padding: 1rem;
+  }
+  .logo{
+    padding: 1rem;
+  }
   .gridConteiner {
     display: grid;
     grid-template-areas:
@@ -235,10 +242,12 @@ main {
   .contacto {
     background-color: #000000;
     color: aliceblue;
+    text-align: center;
   }
   .contactoimg {
+    background-color: #000000;
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
   }
   .gridContacto {
     display: grid;
@@ -248,5 +257,24 @@ main {
       "contactoimg"
       "contacto";
     justify-content: space-between;
+  }
+  .tablero {
+    border: 0px;
+  }
+  .table table-dark table-hover {
+    font-size: 22px;
+  }
+  .encabezado {
+    display: none;
+  }
+  .interior {
+    margin-bottom: 8px;
+    border-bottom: 4px solid #ddd;
+    display: block;
+  }
+  td {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
   }
 }
