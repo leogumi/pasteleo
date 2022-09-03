@@ -12,6 +12,10 @@ body {
   font-family: sans-serif;
   margin: 0;
 }
+.bg-primary {
+  --bs-bg-opacity: none;
+  background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important;
+}
 li {
   list-style: none;
   text-decoration: none;
